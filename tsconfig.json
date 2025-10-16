@@ -1,0 +1,15 @@
+// creer pour pouvoir utiliser ts-node sans compiler en js
+// faut installer :
+// npm install -g ts-node typescript
+
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "rootDir": "./",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "include": ["./*.ts"]
+}
